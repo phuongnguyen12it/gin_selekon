@@ -11,7 +11,7 @@
         "args": [],
         "showLog": true,
         "trace": "verbose",
-        "port": 0
+        "port": 8888
       }
     ]
   }
