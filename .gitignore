@@ -1,0 +1,58 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# The old directory
+_old/
+
+# Temporary files that are created by some editors
+*~
+
+# Dependency directories
+vendor/
+Godeps/
+.idea/
+
+# Output of the command `go generate`
+*_gen.go
+
+# Output of `gofmt`
+*.diff
+
+# Compiled Go files
+*.com
+*.class
+*.dll
+*.exe
+
+# Log files and binaries from running `go test -race`
+*.log
+*.race
+
+# Test coverage
+*.cover
+
+# Output of `godep save`
+Godeps/Godeps.json
+Godeps/_workspace
+
+# Tools
+bin/
+
+# Generated files by various Go generators
+generate/
+
+# OS-specific files
+*.DS_Store
+Thumbs.db
+
+.env
