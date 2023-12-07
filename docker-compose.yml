@@ -14,10 +14,26 @@ services:
       - postgres-network
     volumes:
       - postgres-data:/var/lib/postgresql/data
-
+  mysql:
+      image: mysql:8
+      container_name: my-mysql-container
+      environment:
+        MYSQL_DATABASE: mydatabase
+        MYSQL_ROOT_PASSWORD: myrootpassword
+        MYSQL_USER: myuser
+        MYSQL_PASSWORD: mypassword
+      ports:
+        - "3306:3306"
+      networks:
+        - mysql-network
+      volumes:
+        - mysql-data:/var/lib/mysql
 networks:
   postgres-network:
+    driver: bridge
+  mysql-network:
     driver: bridge
 
 volumes:
   postgres-data:
+  mysql-data:
